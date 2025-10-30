@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Package, Phone } from "lucide-react";
+import ProductCarousel from "@/components/ProductCarousel";
 import queijosImage from "@/assets/category-queijos.jpg";
 import embutidosImage from "@/assets/category-embutidos.jpg";
 import especialImage from "@/assets/category-especiais.jpg";
@@ -64,6 +65,14 @@ const Products = () => {
               Food Service. Nossos produtos são escolhidos com rigor, garantindo sabor, rendimento e 
               padronização para cozinhas profissionais que valorizam a qualidade.
             </p>
+          </div>
+
+          {/* Galeria de Produtos */}
+          <div className="mb-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-8">
+              Confira alguns de nossos produtos
+            </h3>
+            <ProductCarousel />
           </div>
 
           {/* Categorias */}
