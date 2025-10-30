@@ -33,6 +33,14 @@ import manteigna from "@/assets/products/manteiga-president.png";
 import molhoAmerican from "@/assets/products/molho-american-cheese.png";
 import molhoCheddarDefumado from "@/assets/products/molho-cheddar-defumado.png";
 import molhoCheddar220 from "@/assets/products/molho-cheddar-220g.png";
+import molhoCheddarBisnaga from "@/assets/products/molho-cheddar-bisnaga-1-5kg.png";
+import papadaSuina from "@/assets/products/papada-suina-mister-beef.jpg";
+import pickledJalapeno from "@/assets/products/pickled-jalapeno-mccoys.jpg";
+import presuntoCru from "@/assets/products/presunto-cru-vito-balducci.png";
+import queijoBrieAuBleu from "@/assets/products/queijo-brie-au-bleu-ile-de-france.png";
+import queijoPetitBrie from "@/assets/products/queijo-petit-brie-ile-de-france.png";
+import queijoBriePolenghiForma from "@/assets/products/queijo-brie-polenghi-forma.png";
+import queijoBriePolenghiFracao from "@/assets/products/queijo-brie-polenghi-fracao.png";
 
 const products = [
   { id: 1, image: baconMisterBeef, name: "Bacon Mister Beef Extra Fino" },
@@ -54,6 +62,14 @@ const products = [
   { id: 17, image: molhoAmerican, name: "Molho American Cheese Polenghi 1,01kg" },
   { id: 18, image: molhoCheddarDefumado, name: "Molho Cheddar Defumado Polenghi 1,01kg" },
   { id: 19, image: molhoCheddar220, name: "Molho Cheddar Polenghi 220g" },
+  { id: 20, image: molhoCheddarBisnaga, name: "Molho Cheddar Polenghi Bisnaga 1,5kg" },
+  { id: 21, image: papadaSuina, name: "Papada Suína Defumada Fatiada Mister Beef 1kg" },
+  { id: 22, image: pickledJalapeno, name: "Pickled Jalapeños McCoy's Balde 2,2kg" },
+  { id: 23, image: presuntoCru, name: "Presunto Cru Fatiado Vito Balducci 500g" },
+  { id: 24, image: queijoBrieAuBleu, name: "Queijo Brie Au Bleu Ile de France 125g" },
+  { id: 25, image: queijoPetitBrie, name: "Queijo Petit Brie Ile de France 125g" },
+  { id: 26, image: queijoBriePolenghiForma, name: "Queijo Brie Polenghi Forma 1kg" },
+  { id: 27, image: queijoBriePolenghiFracao, name: "Queijo Brie Polenghi Fração 125g" },
 ];
 
 const ProductCarousel = () => {
