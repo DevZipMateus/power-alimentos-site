@@ -66,6 +66,12 @@ import polenguinhoCremoso from "@/assets/products/polenguinho-cremoso-bisnaga.pn
 import queijoProcCheddar from "@/assets/products/queijo-proc-cheddar-144g.png";
 import queijoProcMussarela from "@/assets/products/queijo-proc-mussarela-144g.png";
 import queijoProcPrato from "@/assets/products/queijo-proc-prato-144g.png";
+import queijoSuico from "@/assets/products/queijo-suico-polenghi.png";
+import requeijaoCheddarBisnaga from "@/assets/products/requeijao-cheddar-bisnaga-1-5kg.png";
+import requeijaoLight200 from "@/assets/products/requeijao-light-200g.png";
+import requeijaoTradicional200 from "@/assets/products/requeijao-tradicional-200g.png";
+import requeijaoTradicionalBisnaga from "@/assets/products/requeijao-tradicional-bisnaga-1-5kg.png";
+import sweetPickle from "@/assets/products/sweet-pickle-mccoys.jpg";
 
 const products = [
   { id: 1, image: baconMisterBeef, name: "Bacon Mister Beef Extra Fino" },
@@ -120,6 +126,12 @@ const products = [
   { id: 50, image: queijoProcCheddar, name: "Queijo Processado Fatiado Cheddar Polenghi 144g" },
   { id: 51, image: queijoProcMussarela, name: "Queijo Processado Fatiado Mussarela Polenghi 144g" },
   { id: 52, image: queijoProcPrato, name: "Queijo Processado Fatiado Prato Polenghi 144g" },
+  { id: 53, image: queijoSuico, name: "Queijo Suíço Polenghi Forma kg" },
+  { id: 54, image: requeijaoCheddarBisnaga, name: "Requeijão Cremoso Cheddar Polenghi Bisnaga 1,5kg" },
+  { id: 55, image: requeijaoLight200, name: "Requeijão Cremoso Light Polenghi 200g" },
+  { id: 56, image: requeijaoTradicional200, name: "Requeijão Cremoso Tradicional Polenghi 200g" },
+  { id: 57, image: requeijaoTradicionalBisnaga, name: "Requeijão Cremoso Tradicional Polenghi Bisnaga 1,5kg" },
+  { id: 58, image: sweetPickle, name: "Sweet Pickle Balde McCoy's 3,4kg" },
 ];
 
 const ProductCarousel = () => {
