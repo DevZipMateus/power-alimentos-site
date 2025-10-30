@@ -48,6 +48,24 @@ import queijoCheddarFatiado2270 from "@/assets/products/queijo-cheddar-fatiado-2
 import queijoCoalho from "@/assets/products/queijo-coalho-polenghi.png";
 import queijoAperifraisCote from "@/assets/products/queijo-aperifrais-cote-azur.png";
 import queijoAperifraisProvence from "@/assets/products/queijo-aperifrais-provence.png";
+import queijoCabraChavroux from "@/assets/products/queijo-cabra-chavroux.png";
+import queijoEmmental from "@/assets/products/queijo-emmental-polenghi.png";
+import queijoFrescalFrescatino from "@/assets/products/queijo-frescal-frescatino-250g.png";
+import queijoFrescalLight from "@/assets/products/queijo-frescal-light-frescatino-250g.png";
+import queijoFrescalTradicional from "@/assets/products/queijo-frescal-tradicional-400g.png";
+import queijoGorgonzola from "@/assets/products/queijo-gorgonzola-polenghi.png";
+import queijoGouda from "@/assets/products/queijo-gouda-polenghi.png";
+import queijoMiniBrie from "@/assets/products/queijo-mini-brie-ile-de-france.png";
+import queijoMussarelaFatiado from "@/assets/products/queijo-mussarela-fatiado-polenghi.png";
+import queijoMussarela from "@/assets/products/queijo-mussarela-polenghi.png";
+import queijoParmentino from "@/assets/products/queijo-parmentino-polenghi.png";
+import queijoParmesao from "@/assets/products/queijo-parmesao-polenghi.png";
+import queijoPratoFatiado from "@/assets/products/queijo-prato-fatiado-polenghi.png";
+import queijoPrato from "@/assets/products/queijo-prato-polenghi.png";
+import polenguinhoCremoso from "@/assets/products/polenguinho-cremoso-bisnaga.png";
+import queijoProcCheddar from "@/assets/products/queijo-proc-cheddar-144g.png";
+import queijoProcMussarela from "@/assets/products/queijo-proc-mussarela-144g.png";
+import queijoProcPrato from "@/assets/products/queijo-proc-prato-144g.png";
 
 const products = [
   { id: 1, image: baconMisterBeef, name: "Bacon Mister Beef Extra Fino" },
@@ -84,6 +102,24 @@ const products = [
   { id: 32, image: queijoCoalho, name: "Queijo Coalho Polenghi" },
   { id: 33, image: queijoAperifraisCote, name: "Queijo Cremoso Aperifrais Côte d'Azur Ile de France 100g" },
   { id: 34, image: queijoAperifraisProvence, name: "Queijo Cremoso Aperifrais Provence Ile de France 100g" },
+  { id: 35, image: queijoCabraChavroux, name: "Queijo de Cabra Chavroux Ile de France 150g" },
+  { id: 36, image: queijoEmmental, name: "Queijo Emmental Polenghi Forma kg" },
+  { id: 37, image: queijoFrescalFrescatino, name: "Queijo Frescal Ultrafiltrado Frescatino Polenghi 250g" },
+  { id: 38, image: queijoFrescalLight, name: "Queijo Frescal Ultrafiltrado Light Frescatino Polenghi 250g" },
+  { id: 39, image: queijoFrescalTradicional, name: "Queijo Frescal Ultrafiltrado Tradicional Polenghi 400g" },
+  { id: 40, image: queijoGorgonzola, name: "Queijo Gorgonzola Polenghi Forma kg" },
+  { id: 41, image: queijoGouda, name: "Queijo Gouda Fracionado Polenghi kg" },
+  { id: 42, image: queijoMiniBrie, name: "Queijo Mini Brie Ile de France 125g cx c/ 05 und" },
+  { id: 43, image: queijoMussarelaFatiado, name: "Queijo Mussarela Fatiado Polenghi 2,730kg cx c/ 04 und" },
+  { id: 44, image: queijoMussarela, name: "Queijo Mussarela Polenghi kg" },
+  { id: 45, image: queijoParmentino, name: "Queijo Parmentino Polenghi kg" },
+  { id: 46, image: queijoParmesao, name: "Queijo Parmesão Polenghi kg" },
+  { id: 47, image: queijoPratoFatiado, name: "Queijo Prato Fatiado Polenghi 2,730kg cx c/ 04 und" },
+  { id: 48, image: queijoPrato, name: "Queijo Prato Polenghi kg" },
+  { id: 49, image: polenguinhoCremoso, name: "Queijo Processado Cremoso Polenguinho Bisnaga 1,01kg" },
+  { id: 50, image: queijoProcCheddar, name: "Queijo Processado Fatiado Cheddar Polenghi 144g" },
+  { id: 51, image: queijoProcMussarela, name: "Queijo Processado Fatiado Mussarela Polenghi 144g" },
+  { id: 52, image: queijoProcPrato, name: "Queijo Processado Fatiado Prato Polenghi 144g" },
 ];
 
 const ProductCarousel = () => {
