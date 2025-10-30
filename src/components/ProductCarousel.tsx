@@ -41,6 +41,13 @@ import queijoBrieAuBleu from "@/assets/products/queijo-brie-au-bleu-ile-de-franc
 import queijoPetitBrie from "@/assets/products/queijo-petit-brie-ile-de-france.png";
 import queijoBriePolenghiForma from "@/assets/products/queijo-brie-polenghi-forma.png";
 import queijoBriePolenghiFracao from "@/assets/products/queijo-brie-polenghi-fracao.png";
+import queijoCamembertIle from "@/assets/products/queijo-camembert-ile-de-france.png";
+import queijoCamembertPolenghi from "@/assets/products/queijo-camembert-polenghi.png";
+import queijoCheddarFatiado1136 from "@/assets/products/queijo-cheddar-fatiado-1-136kg.png";
+import queijoCheddarFatiado2270 from "@/assets/products/queijo-cheddar-fatiado-2-270kg.png";
+import queijoCoalho from "@/assets/products/queijo-coalho-polenghi.png";
+import queijoAperifraisCote from "@/assets/products/queijo-aperifrais-cote-azur.png";
+import queijoAperifraisProvence from "@/assets/products/queijo-aperifrais-provence.png";
 
 const products = [
   { id: 1, image: baconMisterBeef, name: "Bacon Mister Beef Extra Fino" },
@@ -70,6 +77,13 @@ const products = [
   { id: 25, image: queijoPetitBrie, name: "Queijo Petit Brie Ile de France 125g" },
   { id: 26, image: queijoBriePolenghiForma, name: "Queijo Brie Polenghi Forma 1kg" },
   { id: 27, image: queijoBriePolenghiFracao, name: "Queijo Brie Polenghi Fração 125g" },
+  { id: 28, image: queijoCamembertIle, name: "Queijo Camembert Ile de France 125g" },
+  { id: 29, image: queijoCamembertPolenghi, name: "Queijo Camembert Polenghi 125g" },
+  { id: 30, image: queijoCheddarFatiado1136, name: "Queijo Cheddar Fatiado Polenghi 1,136kg cx c/ 04 und" },
+  { id: 31, image: queijoCheddarFatiado2270, name: "Queijo Cheddar Fatiado Polenghi 2,270kg cx c/ 08 und" },
+  { id: 32, image: queijoCoalho, name: "Queijo Coalho Polenghi" },
+  { id: 33, image: queijoAperifraisCote, name: "Queijo Cremoso Aperifrais Côte d'Azur Ile de France 100g" },
+  { id: 34, image: queijoAperifraisProvence, name: "Queijo Cremoso Aperifrais Provence Ile de France 100g" },
 ];
 
 const ProductCarousel = () => {
