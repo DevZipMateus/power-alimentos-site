@@ -1,8 +1,18 @@
-import { useEffect, useCallback } from "react";
-import useEmblaCarousel from "embla-carousel-react";
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import Autoplay from "embla-carousel-autoplay";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 import baconMisterBeef from "@/assets/products/bacon-mister-beef.jpg";
 import creamCheeseBalde from "@/assets/products/cream-cheese-balde.png";
@@ -29,68 +39,76 @@ const products = [
 ];
 
 const ProductCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
-      loop: true,
-      align: "center",
-    },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
-  );
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
+  const [selectedImage, setSelectedImage] = useState<{ image: string; name: string } | null>(null);
 
   return (
-    <div className="relative max-w-4xl mx-auto">
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">
+    <>
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: false,
+          }),
+        ]}
+        className="w-full max-w-5xl mx-auto"
+      >
+        <CarouselContent>
           {products.map((product) => (
-            <div
-              key={product.id}
-              className="flex-[0_0_100%] min-w-0 px-4"
-            >
-              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-                <div className="w-full h-80 flex items-center justify-center mb-4">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-                <p className="text-center text-lg font-semibold text-foreground">
-                  {product.name}
-                </p>
+            <CarouselItem key={product.id} className="md:basis-1/2 lg:basis-1/3">
+              <div className="p-2">
+                <Card 
+                  className="cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  onClick={() => setSelectedImage({ image: product.image, name: product.name })}
+                >
+                  <CardContent className="flex flex-col items-center justify-center p-6">
+                    <div className="w-full h-64 flex items-center justify-center mb-4">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-center text-sm font-semibold text-foreground line-clamp-2">
+                      {product.name}
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
-            </div>
+            </CarouselItem>
           ))}
-        </div>
-      </div>
+        </CarouselContent>
+        <CarouselPrevious className="hidden md:flex" />
+        <CarouselNext className="hidden md:flex" />
+      </Carousel>
 
-      {/* Navigation Buttons */}
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-background/95 backdrop-blur-sm shadow-lg hover:scale-110 transition-transform"
-        onClick={scrollPrev}
-        aria-label="Produto anterior"
-      >
-        <ChevronLeft className="h-6 w-6" />
-      </Button>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-background/95 backdrop-blur-sm shadow-lg hover:scale-110 transition-transform"
-        onClick={scrollNext}
-        aria-label="Próximo produto"
-      >
-        <ChevronRight className="h-6 w-6" />
-      </Button>
-    </div>
+      {/* Modal de Expansão */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-4xl">
+          <DialogTitle className="sr-only">
+            {selectedImage?.name}
+          </DialogTitle>
+          {selectedImage && (
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-full flex items-center justify-center bg-muted/30 rounded-lg p-8">
+                <img
+                  src={selectedImage.image}
+                  alt={selectedImage.name}
+                  className="max-w-full max-h-[70vh] object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-center text-foreground">
+                {selectedImage.name}
+              </h3>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+    </>
   );
 };
 
