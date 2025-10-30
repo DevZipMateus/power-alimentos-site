@@ -24,9 +24,18 @@ import creamCheeseTradicional400 from "@/assets/products/cream-cheese-tradiciona
 import cremeRicota from "@/assets/products/creme-ricota-light.png";
 import doceLeiteCoco from "@/assets/products/doce-leite-coco.png";
 import doceLeite from "@/assets/products/doce-leite.png";
+import doceLeite800 from "@/assets/products/doce-leite-800g.png";
+import fondueQueijo from "@/assets/products/fondue-queijo.png";
+import goiabada250 from "@/assets/products/goiabada-250g.jpg";
+import goiabada500 from "@/assets/products/goiabada-500g.jpg";
+import gorduraVegetal from "@/assets/products/gordura-vegetal.jpg";
+import manteigna from "@/assets/products/manteiga-president.png";
+import molhoAmerican from "@/assets/products/molho-american-cheese.png";
+import molhoCheddarDefumado from "@/assets/products/molho-cheddar-defumado.png";
+import molhoCheddar220 from "@/assets/products/molho-cheddar-220g.png";
 
 const products = [
-  { id: 1, image: baconMisterBeef, name: "Bacon Mister Beef" },
+  { id: 1, image: baconMisterBeef, name: "Bacon Mister Beef Extra Fino" },
   { id: 2, image: creamCheeseBalde, name: "Cream Cheese Polenghi Balde 3,6kg" },
   { id: 3, image: creamCheeseBisnaga15, name: "Cream Cheese Polenghi Bisnaga 1,5kg" },
   { id: 4, image: creamCheeseBisnaga400, name: "Cream Cheese Polenghi Bisnaga 400g" },
@@ -36,6 +45,15 @@ const products = [
   { id: 8, image: cremeRicota, name: "Creme de Ricota Polenghi Light 150g" },
   { id: 9, image: doceLeiteCoco, name: "Doce de Leite com Coco Viçosa 400g" },
   { id: 10, image: doceLeite, name: "Doce de Leite Viçosa 400g" },
+  { id: 11, image: doceLeite800, name: "Doce de Leite Viçosa 800g" },
+  { id: 12, image: fondueQueijo, name: "Fondue de Queijo Polenghi 400g" },
+  { id: 13, image: goiabada250, name: "Goiabada Cascão Zélia 250g" },
+  { id: 14, image: goiabada500, name: "Goiabada Cascão Zélia 500g" },
+  { id: 15, image: gorduraVegetal, name: "Gordura Vegetal Coamo Fry 400 14,5kg" },
+  { id: 16, image: manteigna, name: "Manteiga Extra sem Sal President 5kg" },
+  { id: 17, image: molhoAmerican, name: "Molho American Cheese Polenghi 1,01kg" },
+  { id: 18, image: molhoCheddarDefumado, name: "Molho Cheddar Defumado Polenghi 1,01kg" },
+  { id: 19, image: molhoCheddar220, name: "Molho Cheddar Polenghi 220g" },
 ];
 
 const ProductCarousel = () => {
